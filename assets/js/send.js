@@ -10,7 +10,7 @@ function versions(){
     req.send()
 }
 function get(){
-    while(sessionStorage.getItem("versions") == null){};
+    //while(sessionStorage.getItem("versions") == null){}; fatal line of code
     let req = new XMLHttpRequest();
     req.onreadystatechange = () => {
         if (req.readyState == XMLHttpRequest.DONE) {
